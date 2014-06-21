@@ -31,10 +31,10 @@ class NameMe:
 			if new_index != old_index:
 				break
 			new_index = random.randrange(len(iterable))
-		return iterable[new_index]
+		return iterable[new_index], new_index
 
 	def regenerate_adjective(self):
-		self.first_part = self._regenerate_word(
+		self.first_part, self.adjective_index = self._regenerate_word(
 			self.adjectives,
 			self.adjective_index,
 			self.first_part
@@ -42,7 +42,7 @@ class NameMe:
 		self.name = self.get_name()
 
 	def regenerate_noun(self):
-		self.last_part = self._regenerate_word(
+		self.last_part, self.noun_index = self._regenerate_word(
 			self.nouns,
 			self.noun_index,
 			self.last_part
