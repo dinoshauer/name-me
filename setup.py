@@ -9,5 +9,5 @@ setup(
     author_email='k@mackwerk.dk',
     license=__license__,
     url='https://github.com/Dinoshauer/name-me',
-    py_modules=['nameme']
+    packages=['nameme']
 )
