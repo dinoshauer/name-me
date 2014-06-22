@@ -46,6 +46,3 @@ class RegeneratedWordISNotTheSame(TestCase):
 		self.name.regenerate_noun()
 		assert original_word != self.name.last_part
 		assert original_index != self.name.noun_index
-
-if __name__ == '__main__':
-    unittest.main()
