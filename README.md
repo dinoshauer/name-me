@@ -7,7 +7,11 @@ NameMe
 
 Generate random strings that you can actually remember.
 
-# Usage
+## Installation
+
+	pip install name-me
+
+## Usage
 
 	from nameme import NameMe
 	from nameme.adjectives import adjective_words
