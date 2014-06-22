@@ -2,12 +2,22 @@ import unittest
 
 from nameme.adjectives import adjective_words
 from nameme.nouns import noun_words
-from nameme import NameMe
+from nameme import NameMe, MissingParameterException
 
+
+class TestRaisesMissingParameterException(unittest.TestCase):
+	def test(self):
+		self.assertRaises(MissingParameterException, NameMe)
 
 class TestCase(unittest.TestCase):
 	def setUp(self):
 		self.name = NameMe(adjective_words, noun_words)
+
+class WordsAreInTheLists(TestCase):
+	def test(self):
+		first_part, last_part = self.name.name.split(self.name.seperator)
+		assert first_part in adjective_words
+		assert last_part in noun_words
 
 class DefaultSeperatorIsSpace(TestCase):
 	def test(self):

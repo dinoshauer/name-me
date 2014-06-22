@@ -22,7 +22,7 @@ class NameMe:
 	def _get_index(iterable):
 		if iterable:
 			return random.randrange(len(iterable))
-		raise MissingParameterException()
+		raise MissingParameterException("Missing parameter")
 
 	@staticmethod
 	def _regenerate_word(iterable, old_index, old_word, retries=5):
@@ -30,8 +30,7 @@ class NameMe:
 		for i in xrange(retries):
 			if new_index != old_index:
 				break
-			new_index = random.randrange(len(iterable))
-		return iterable[new_index], new_index
+		return iterable[new_index], random.randrange(len(iterable))
 
 	def regenerate_adjective(self):
 		self.first_part, self.adjective_index = self._regenerate_word(
