@@ -5,6 +5,8 @@
 NameMe
 ======
 
+Generate random strings that you can actually remember.
+
 # Usage
 
 	from nameme import NameMe
