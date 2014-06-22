@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/Dinoshauer/name-me.svg?branch=master)](https://travis-ci.org/Dinoshauer/name-me)
+[![Coverage Status](https://coveralls.io/repos/Dinoshauer/name-me/badge.png)](https://coveralls.io/r/Dinoshauer/name-me)
+
+
 NameMe
 ======
 
