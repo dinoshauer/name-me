@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/Dinoshauer/name-me.svg?branch=master)](https://travis-ci.org/Dinoshauer/name-me)
 [![Coverage Status](https://img.shields.io/coveralls/Dinoshauer/name-me.svg)](https://coveralls.io/r/Dinoshauer/name-me?branch=master)
-[![Latest Version](https://img.shields.io/pypi/v/name-me.svg
-[![License](https://img.shields.io/pypi/l/name-me.svg
+[![Latest Version](https://img.shields.io/pypi/v/name-me.svg)](https://pypi.python.org/pypi/name-me/)
+[![License](https://img.shields.io/pypi/l/name-me.svg)](https://pypi.python.org/pypi/name-me/)
 
 
 NameMe
